@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="#000000">
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="5"
+		android:id="@+id/output_scroll_vertical">
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="vertical"
+			android:id="@+id/output_list"
+			android:padding="5dp"/>
+
+	</ScrollView>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:layout_gravity="center_vertical|center_horizontal"
+		android:padding="5dp">
+
+		<EditText
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:ems="10"
+			android:singleLine="true"
+			android:id="@+id/input_command"
+			android:layout_weight="3"/>
+
+		<Button
+			style="?android:attr/buttonStyleSmall"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="EXEC"
+			android:id="@+id/execute_btn"
+			android:textStyle="bold"
+			android:layout_weight="0.2"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+
